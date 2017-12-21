@@ -1,27 +1,17 @@
-# AngularGoBoilerplate
+# Angular + Golang Starter Kit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
+## Prerequisites
+- You have Angular CLI & npm installed.
+- You have Go installed and GOPATH set up properly.
 
-## Development server
+## Before You Begin
+Instead of running `npm install` as you normally would, you need to run `npm run install-dependencies` which will run `npm install` for you in addition to installing the required Go dependencies for this boilerplate project.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run The Project
+`npm start` will run both the Go server (by default at port 4201) and Webpack Dev Server for Angular (at port 4200). `npm start` basically runs the `serve.sh` bash script which in turn starts `ng serve` and Go live server parallely. You can access the app by visiting `http://localhost:4200`.
 
-## Code scaffolding
+**Note:** *The console output for both the client and the server will be printed in the same console window.*
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### This boilerplate takes care of *Allow-Cross-Origin-Access* errors by default by explicitely allowing the client's address to make cross origin requests
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This also means that you will have to edit the code to make it work for production builds. Currently, it is also required that both the client and server be built separately. This boilerplate currently provides a stage only for development purposes with no automatic combined builds. I am working on making it work properly with build and also on adding some customizabilty, so keep an eye out for those.
