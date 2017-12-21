@@ -4,11 +4,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "./serve.sh",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "install-dependencies": "npm install && go get github.com/codegangsta/gin && go get ./src/server/..."
   },
   "private": true,
   "dependencies": {
