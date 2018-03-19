@@ -1,5 +1,7 @@
 # Angular + Golang Starter Kit
 
+**Note:** *I have shifted my focus to development of a CLI tool which can automatically generate a project like this and a lot more things like serve and production build, if you are interested in testing it out or would like to contribute, you may find the project here: https://github.com/anshap1719/nggo. It's written in Golang*
+
 ## Prerequisites
 - You have Angular CLI & npm installed.
 - You have Go installed and GOPATH set up properly.
